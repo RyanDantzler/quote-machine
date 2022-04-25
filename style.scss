@@ -1,0 +1,160 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway:400,500");
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  vertical-align: baseline;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  display: flex;
+  background-color: #333;
+  color: #333;
+  font-weight: 400;
+}
+
+#wrapper {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#quote-box {
+  color: #fff;
+  border-radius: 5px;
+  padding: 14px 14px;
+  width: calc(100% - 24px);
+  height: calc(100% - 24px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#quote-text, #quote-author, #buttons {
+  display: flex;
+  width: 100%;
+}
+
+#quote-text {
+  justify-content: center;
+  font-family: "Raleway", sans-serif;
+  font-size: 1.6rem;
+  line-height: 1.8rem;
+  font-weight: 500;
+  text-align: center;
+  padding-bottom: 12px;
+  height: auto;
+  clear: both;
+  opacity: 0;
+
+  i {
+    font-size: 2rem;
+    line-height: 1.8rem;
+    vertical-align: top;
+    padding-right: 8px;
+  }
+}
+
+#quote-author {
+  justify-content: flex-end;
+  font-family: "Raleway", sans-serif;
+  padding-bottom: 30px;
+  height: auto;
+  clear: both;
+  opacity: 0;
+}
+
+#buttons {
+  padding-bottom: 0;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100vw;
+  padding: 24px;
+  
+  div {
+    display: flex;
+    width: 50%;
+    
+    &:last-child {
+      justify-content: flex-end;
+    }
+    
+    a {
+      margin-right: 5px;
+    }
+  }
+  #social-links a {
+    padding: 0px;
+    padding-top: 9px;
+    text-align: center;
+    font-size: 1.2rem;
+    margin-right: 5px;
+    height: 38px;
+    width: 40px;
+  }
+  
+  .button {
+    height: 38px;
+    border: none;
+    border-radius: 3px;
+    color: #333;
+    background-color: #fff;
+    outline: none;
+    font-size: 0.85em;
+    padding: 8px 18px 6px 18px;
+    opacity: 1;
+    cursor: pointer;
+    outline: none;
+    
+    &:hover {
+      opacity: 0.9;
+    }
+  }
+}
+
+@media (min-width: 600px) {
+    #quote-box {
+        display: block;
+        height: auto;
+        max-width: 550px;
+        padding: 40px 50px;
+        background-color: #fff;
+        color: inherit;
+    }
+
+    #quote-text {
+      font-size: 1.75rem;
+      line-height: 2rem;
+      padding-bottom: 20px;
+    
+      i {
+        font-size: 2.2rem;
+        line-height: 2rem;
+        padding-right: 10px;
+      }
+    }
+
+    #buttons {
+      position: initial;
+      width: auto;
+      padding: 0;
+
+      .button {
+        color: #fff;
+        background-color: #333;
+      }
+    }
+}

@@ -1,0 +1,186 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway:400,500");
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  vertical-align: baseline;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #333;
+  color: #333;
+  font-weight: 400;
+}
+
+#wrapper {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#quote-box {
+  color: #fff;
+  border-radius: 5px;
+  padding: 14px 14px;
+  width: calc(100% - 24px);
+  height: calc(100% - 24px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#quote-text, #quote-author, #buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+#quote-text {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: "Raleway", sans-serif;
+  font-size: 1.6rem;
+  line-height: 1.8rem;
+  font-weight: 500;
+  text-align: center;
+  padding-bottom: 12px;
+  height: auto;
+  clear: both;
+  opacity: 0;
+}
+
+#quote-text i {
+  font-size: 2rem;
+  line-height: 1.8rem;
+  vertical-align: top;
+  padding-right: 8px;
+}
+
+#quote-author {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  font-family: "Raleway", sans-serif;
+  padding-bottom: 30px;
+  height: auto;
+  clear: both;
+  opacity: 0;
+}
+
+#buttons {
+  padding-bottom: 0;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100vw;
+  padding: 24px;
+}
+
+#buttons div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 50%;
+}
+
+#buttons div:last-child {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+#buttons div a {
+  margin-right: 5px;
+}
+
+#buttons #social-links a {
+  padding: 0px;
+  padding-top: 9px;
+  text-align: center;
+  font-size: 1.2rem;
+  margin-right: 5px;
+  height: 38px;
+  width: 40px;
+}
+
+#buttons .button {
+  height: 38px;
+  border: none;
+  border-radius: 3px;
+  color: #333;
+  background-color: #fff;
+  outline: none;
+  font-size: 0.85em;
+  padding: 8px 18px 6px 18px;
+  opacity: 1;
+  cursor: pointer;
+  outline: none;
+}
+
+#buttons .button:hover {
+  opacity: 0.9;
+}
+
+@media (min-width: 600px) {
+  #quote-box {
+    display: block;
+    height: auto;
+    max-width: 550px;
+    padding: 40px 50px;
+    background-color: #fff;
+    color: inherit;
+  }
+  #quote-text {
+    font-size: 1.75rem;
+    line-height: 2rem;
+    padding-bottom: 20px;
+  }
+  #quote-text i {
+    font-size: 2.2rem;
+    line-height: 2rem;
+    padding-right: 10px;
+  }
+  #buttons {
+    position: initial;
+    width: auto;
+    padding: 0;
+  }
+  #buttons .button {
+    color: #fff;
+    background-color: #333;
+  }
+}
+/*# sourceMappingURL=style.css.map */
